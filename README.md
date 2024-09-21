@@ -94,8 +94,6 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 - 💻 [React](https://reactjs.org/) for powering the front end.
 - 🚀 Inspiration from various weather applications.
 
-```
-
 ## 🚀 Live Demo
 
 You can view the live version of the app here:  
