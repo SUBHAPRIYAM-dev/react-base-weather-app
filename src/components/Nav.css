@@ -1,0 +1,22 @@
+.navbar {
+   background-color: #004e92;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 20px;
+   color: white;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ 
+ .navbar-logo img {
+   height: 50px; 
+ }
+ .navbar-logo {
+   display: flex;
+   align-items: center;
+}
+.navbar-text {
+   color: #fff;
+   font-size: 24px; /* Adjust text size */
+}

@@ -1,0 +1,133 @@
+/* Container with blue-black background */
+.weather-container {
+  background: linear-gradient(135deg, #000428, #004e92);
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Search bar styling */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1f1f1f;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Weather card container */
+.weather-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+h2{
+  text-align: center;
+}
+
+/* Each card */
+.weather-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+/* Hover effect for card */
+.weather-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Styling for the weather icon */
+.weather-card img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Make the search bar full width on mobile */
+  .search-bar {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Adjust grid layout for smaller screens */
+  .weather-cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* Adjust card padding and size for smaller screens */
+  .weather-card {
+    padding: 15px;
+  }
+
+  .weather-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .search-bar {
+    width: 90%;
+  }
+
+  button {
+    padding: 8px;
+  }
+
+  .weather-card {
+    padding: 10px;
+  }
+
+  .weather-card img {
+    width: 35px;
+    height: 35px;
+  }
+}
